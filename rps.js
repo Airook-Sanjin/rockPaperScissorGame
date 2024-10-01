@@ -1,7 +1,7 @@
 let tie = 0;
 let userPoints = 0;
 let compPoints = 0;
-const cPoints = document.createElement("h3");
+const cPoints = document.createElement("h2");
 let rock = document.getElementById("rock");
 let paper = document.getElementById("paper");
 let scissors = document.getElementById("scissors");
@@ -43,17 +43,17 @@ function rpsGame() {
   } else if (userChoice === "scissors" && coChoice==="paper") {
     userPoints++;
   }
-  points.innerHTML = `Computer points :${compPoints}, User points: ${userPoints}, and ties: ${tie}`;
+  points.innerHTML = `Computer points :${compPoints} --- User points: ${userPoints} --- ties: ${tie}`;
   split.appendChild(points);
   
-  cPoints.innerHTML = `comp choice: ${coChoice}`;
+  cPoints.innerHTML = `Comp choice: ${coChoice}`;
   split.appendChild(cPoints);
 
 }
 function compChoice() {
   let cChoice = Math.floor(Math.random() * 3) + 1;
   let choice;
-  const cPoints = document.createElement("h3");
+  const cPoints = document.createElement("h2");
   switch (cChoice) {
     case 1:
       choice = "rock";

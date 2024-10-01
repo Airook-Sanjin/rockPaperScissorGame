@@ -1,0 +1,50 @@
+* {
+  /* Neccessary for all css files*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(34, 47%, 79%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+#title {
+    margin-top: 50px;
+  font-weight: 900;
+  flex: 1 0 100px;
+}
+img {
+  width: 50px;
+  height: 50px;
+}
+.btncontainer{
+    
+    
+    align-self: space-between;
+    
+
+}
+.button {
+  background-color: hsl(32, 19%, 40%);
+  border-radius: 100px;
+  border-width: 4px;
+  color: white;
+  min-width: 150px;
+  height: 100px;
+  flex:1 0 100px;
+}
+.button:hover {
+  background-color: hsl(32, 19%, 50%);
+  transform: translateY(-4px);
+}
+
+#split{
+    margin-top: 50px;
+}
